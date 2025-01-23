@@ -132,7 +132,8 @@ export default function Home() {
           padding: '20px',
           borderRadius: '10px',
           boxShadow: '0 0 10px #FF69B4',
-          marginTop: '20px'
+          marginTop: '20px',
+          marginLeft: '15px'
         }}>
           <h3 style={{ 
             marginBottom: '1rem',
