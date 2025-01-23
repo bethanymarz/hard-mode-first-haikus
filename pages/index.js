@@ -141,6 +141,20 @@ export default function Home() {
               <p key={index} style={{ margin: '0.5rem 0' }}>{line}</p>
             ))}
           </div>
+          <a 
+            href={result.url} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ 
+              display: 'inline-block',
+              marginTop: '20px',
+              color: '#2C5282',
+              textDecoration: 'underline',
+              fontWeight: 'bold'
+            }}
+          >
+            Read the full blog post
+          </a>
         </div>
       )}
 
