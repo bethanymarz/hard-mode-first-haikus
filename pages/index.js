@@ -179,6 +179,14 @@ export default function Home() {
           {result.error}
         </div>
       )}
+
+      <footer style={{ 
+        marginTop: '40px', 
+        fontSize: '1rem', 
+        color: '#FF4500' 
+      }}>
+        Made with <3 by Bethany Crystal, with the help of Cursor, Vercel, Claude, Flux, and Paragraph.xyz.
+      </footer>
     </div>
   );
 } 
