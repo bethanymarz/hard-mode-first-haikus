@@ -41,6 +41,11 @@ export default function Home() {
       fontFamily: 'Arial, sans-serif',
       color: '#333'
     }}>
+      <img 
+        src="/hard-mode-first.png" 
+        alt="Hard Mode First Logo" 
+        style={{ width: '150px', marginBottom: '20px' }}
+      />
       <h1 style={{ 
         fontSize: '2.5rem',
         marginBottom: '2rem',
@@ -49,7 +54,24 @@ export default function Home() {
         Hard Mode First Haiku Generator
       </h1>
 
-      <p>I know, I know, my blog posts are wayyyy too long for any human audience. But now you can turn any one of my blog posts into an instant haiku.</p>
+      <p>
+        I know, I know, my blog posts are wayyyy too long for any human audience. 
+        But now you can turn any one of my blog posts into an instant haiku.
+      </p>
+
+      <a 
+        href="https://hardmodefirst.xyz/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        style={{ 
+          display: 'inline-block',
+          margin: '20px 0',
+          color: '#2C5282',
+          textDecoration: 'underline'
+        }}
+      >
+        Visit my blog
+      </a>
 
       <div style={{ marginBottom: '2rem' }}>
         <h2 style={{ marginBottom: '1rem', color: '#2C5282' }}>Select a Blog Post</h2>
