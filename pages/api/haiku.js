@@ -91,6 +91,7 @@ export default async function handler(req, res) {
     res.status(200).json({
       title: blogPost.title,
       haiku: haikuResponse.haiku,
+      url: blogPost.link,
       success: true
     });
   } catch (error) {
