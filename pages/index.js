@@ -53,7 +53,8 @@ export default function Home() {
         padding: '20px', 
         borderRadius: '10px',
         marginBottom: '20px',
-        marginTop: '100px'
+        marginTop: '150px',
+        marginLeft: '15px'
       }}>
         <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#FF4500' }}>
           I know, I know, my blog posts are wayyyy too long for any human audience. 
