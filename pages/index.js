@@ -46,8 +46,10 @@ export default function Home() {
         marginBottom: '2rem',
         color: '#2C5282'
       }}>
-        Haiku Generator
+        Hard Mode First Haiku Generator
       </h1>
+
+      <p>I know, I know, my blog posts are wayyyy too long for any human audience. But now you can turn any one of my blog posts into an instant haiku.</p>
 
       <div style={{ marginBottom: '2rem' }}>
         <h2 style={{ marginBottom: '1rem', color: '#2C5282' }}>Select a Blog Post</h2>
