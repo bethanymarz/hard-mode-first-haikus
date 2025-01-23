@@ -82,7 +82,8 @@ export default function Home() {
         backgroundColor: 'rgba(255, 255, 255, 0.8)', 
         padding: '20px', 
         borderRadius: '10px',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        marginLeft: '15px'
       }}>
         <h2 style={{ marginBottom: '1rem', color: '#FF4500', fontSize: '2rem' }}>Select a Blog Post</h2>
         <select 
