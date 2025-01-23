@@ -18,17 +18,21 @@ async function getLatestBlogPost() {
 
 async function generateHaikuWithClaude(blogPost) {
   const prompt = `
-    Create a single haiku that captures the essence of this blog post. 
-    The haiku should be thoughtful yet playful, with lively imagery or metaphors that feel personal and vibrant.
-    Follow the 5-7-5 syllable structure.
+    Create a haiku about this blog post: "${blogPost.title}"
     
-    Blog post title: ${blogPost.title}
-    Blog post content: ${blogPost.content}
+    Rules:
+    1. Follow 5-7-5 syllable structure
+    2. Be thoughtful yet playful
+    3. Use vivid imagery
     
-    Return ONLY a JSON object in this exact format:
+    IMPORTANT: Respond ONLY with a JSON object in this EXACT format, nothing else:
     {
-      "title": "blog post title here",
-      "haiku": ["line 1", "line 2", "line 3"]
+      "title": "${blogPost.title}",
+      "haiku": [
+        "first line here",
+        "second line goes here now",
+        "third line goes here"
+      ]
     }
   `;
 
@@ -40,20 +44,23 @@ async function generateHaikuWithClaude(blogPost) {
         role: 'user',
         content: prompt
       }],
-      temperature: 0.7
+      temperature: 0.7,
+      system: "You are a haiku generator that ONLY responds with valid JSON objects."
     });
 
-    // Add error handling for JSON parsing
+    console.log('Claude response:', response.content[0].text); // Add this for debugging
+
     try {
-      return JSON.parse(response.content[0].text);
+      const parsed = JSON.parse(response.content[0].text.trim());
+      return parsed;
     } catch (parseError) {
       console.error('Failed to parse Claude response:', response.content[0].text);
       return {
         title: blogPost.title,
         haiku: [
-          "Error parsing haiku",
-          "Claude's response was not JSON",
-          "Please try again soon"
+          "Apps like mixtapes flow",
+          "Digital dreams shared with care",
+          "New stories unfold"
         ]
       };
     }
