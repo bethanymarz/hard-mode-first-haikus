@@ -10,7 +10,8 @@ const parser = new RSSParser();
 async function getLatestBlogPost() {
   try {
     const feed = await parser.parseURL('https://api.paragraph.xyz/blogs/rss/@bethanycrystal');
-    return feed.items[0];
+    // Check if the feed provides more items or pagination
+    return feed.items[0]; // This currently fetches the latest post
   } catch (error) {
     throw new Error('Failed to fetch blog post: ' + error.message);
   }
