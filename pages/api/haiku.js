@@ -25,20 +25,42 @@ async function generateHaikuWithClaude(blogPost) {
     Blog post title: ${blogPost.title}
     Blog post content: ${blogPost.content}
     
-    Format the response as a JSON object with title and haiku array fields.
+    Return ONLY a JSON object in this exact format:
+    {
+      "title": "blog post title here",
+      "haiku": ["line 1", "line 2", "line 3"]
+    }
   `;
 
-  const response = await anthropic.messages.create({
-    model: 'claude-3-opus-20240229',
-    max_tokens: 150,
-    messages: [{
-      role: 'user',
-      content: prompt
-    }],
-    temperature: 0.7
-  });
+  try {
+    const response = await anthropic.messages.create({
+      model: 'claude-3-opus-20240229',
+      max_tokens: 150,
+      messages: [{
+        role: 'user',
+        content: prompt
+      }],
+      temperature: 0.7
+    });
 
-  return JSON.parse(response.content[0].text);
+    // Add error handling for JSON parsing
+    try {
+      return JSON.parse(response.content[0].text);
+    } catch (parseError) {
+      console.error('Failed to parse Claude response:', response.content[0].text);
+      return {
+        title: blogPost.title,
+        haiku: [
+          "Error parsing haiku",
+          "Claude's response was not JSON",
+          "Please try again soon"
+        ]
+      };
+    }
+  } catch (error) {
+    console.error('Claude API error:', error);
+    throw new Error('Failed to generate haiku: ' + error.message);
+  }
 }
 
 // Make the handler async and actually use the functions
