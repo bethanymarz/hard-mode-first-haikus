@@ -44,30 +44,43 @@ export default function Home() {
       backgroundSize: 'cover',
       border: '10px solid #FFD700',
       borderRadius: '15px',
-      boxShadow: '0 0 20px #FF69B4'
+      boxShadow: '0 0 20px #FF69B4',
+      textAlign: 'center'
     }}>
-      <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#FF4500' }}>
-        I know, I know, my blog posts are wayyyy too long for any human audience. 
-        But now you can turn any one of my blog posts into an instant haiku.
-      </p>
+      <div style={{ 
+        backgroundColor: 'rgba(255, 255, 255, 0.8)', 
+        padding: '20px', 
+        borderRadius: '10px',
+        marginBottom: '20px'
+      }}>
+        <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#FF4500' }}>
+          I know, I know, my blog posts are wayyyy too long for any human audience. 
+          But now you can turn any one of my blog posts into an instant haiku.
+        </p>
 
-      <a 
-        href="https://hardmodefirst.xyz/" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        style={{ 
-          display: 'inline-block',
-          margin: '20px 0',
-          color: '#FF4500',
-          textDecoration: 'underline',
-          fontWeight: 'bold',
-          fontSize: '1.5rem'
-        }}
-      >
-        Visit my blog
-      </a>
+        <a 
+          href="https://hardmodefirst.xyz/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{ 
+            display: 'inline-block',
+            margin: '20px 0',
+            color: '#FF4500',
+            textDecoration: 'underline',
+            fontWeight: 'bold',
+            fontSize: '1.5rem'
+          }}
+        >
+          Visit my blog
+        </a>
+      </div>
 
-      <div style={{ marginBottom: '2rem' }}>
+      <div style={{ 
+        backgroundColor: 'rgba(255, 255, 255, 0.8)', 
+        padding: '20px', 
+        borderRadius: '10px',
+        marginBottom: '20px'
+      }}>
         <h2 style={{ marginBottom: '1rem', color: '#FF4500', fontSize: '2rem' }}>Select a Blog Post</h2>
         <select 
           onChange={(e) => setSelectedPost(e.target.value)}
@@ -111,11 +124,11 @@ export default function Home() {
 
       {result && !result.error && (
         <div style={{
-          backgroundColor: '#FFFACD',
-          padding: '2rem',
-          borderRadius: '0.5rem',
+          backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          padding: '20px',
+          borderRadius: '10px',
           boxShadow: '0 0 10px #FF69B4',
-          marginTop: '2rem'
+          marginTop: '20px'
         }}>
           <h3 style={{ 
             marginBottom: '1rem',
