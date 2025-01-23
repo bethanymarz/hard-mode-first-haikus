@@ -38,18 +38,19 @@ export default function Home() {
       padding: '40px',
       maxWidth: '800px',
       margin: '0 auto',
-      fontFamily: 'system-ui, sans-serif'
+      fontFamily: 'Arial, sans-serif',
+      color: '#333'
     }}>
       <h1 style={{ 
         fontSize: '2.5rem',
         marginBottom: '2rem',
-        color: '#2D3748'
+        color: '#2C5282'
       }}>
         Haiku Generator
       </h1>
 
       <div style={{ marginBottom: '2rem' }}>
-        <h2 style={{ marginBottom: '1rem' }}>Select a Blog Post</h2>
+        <h2 style={{ marginBottom: '1rem', color: '#2C5282' }}>Select a Blog Post</h2>
         <select 
           onChange={(e) => setSelectedPost(e.target.value)}
           style={{
@@ -57,7 +58,8 @@ export default function Home() {
             padding: '0.5rem',
             marginBottom: '1rem',
             borderRadius: '0.375rem',
-            border: '1px solid #E2E8F0'
+            border: '1px solid #CBD5E0',
+            fontSize: '1rem'
           }}
         >
           <option value="">Latest Post</option>
@@ -72,13 +74,14 @@ export default function Home() {
           onClick={() => generateHaiku(selectedPost)}
           disabled={loading}
           style={{
-            backgroundColor: '#4A5568',
+            backgroundColor: '#2C5282',
             color: 'white',
             padding: '0.75rem 1.5rem',
             borderRadius: '0.375rem',
             border: 'none',
             cursor: loading ? 'wait' : 'pointer',
-            opacity: loading ? 0.7 : 1
+            opacity: loading ? 0.7 : 1,
+            fontSize: '1rem'
           }}
         >
           {loading ? 'Generating...' : 'Generate Haiku'}
@@ -87,14 +90,15 @@ export default function Home() {
 
       {result && !result.error && (
         <div style={{
-          backgroundColor: '#F7FAFC',
+          backgroundColor: '#EDF2F7',
           padding: '2rem',
           borderRadius: '0.5rem',
-          boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)'
+          boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)',
+          marginTop: '2rem'
         }}>
           <h3 style={{ 
             marginBottom: '1rem',
-            color: '#4A5568',
+            color: '#2C5282',
             fontSize: '1.25rem'
           }}>
             {result.title}
