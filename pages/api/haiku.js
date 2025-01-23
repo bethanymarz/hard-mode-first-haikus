@@ -41,21 +41,6 @@ async function generateHaikuWithClaude(blogPost) {
   return JSON.parse(response.content[0].text);
 }
 
-export default async function handler(req, res) {
-  try {
-    const blogPost = await getLatestBlogPost();
-    const haikuResponse = await generateHaikuWithClaude(blogPost);
-    
-    res.status(200).json({
-      title: blogPost.title,
-      haiku: haikuResponse.haiku,
-      success: true
-    });
-  } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ 
-      error: error.message,
-      success: false 
-    });
-  }
+export default function handler(req, res) {
+  res.status(200).json({ message: 'API is working!' });
 } 
