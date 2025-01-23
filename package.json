@@ -1,1 +1,21 @@
- 
+{
+  "name": "haiku-api",
+  "version": "1.0.0",
+  "description": "API for generating haikus",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "next": "^12.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "syllable": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+} 
