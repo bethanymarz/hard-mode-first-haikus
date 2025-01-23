@@ -41,18 +41,20 @@ export default function Home() {
       fontFamily: 'Arial, sans-serif',
       color: '#333'
     }}>
-      <img 
-        src="/hard-mode-first.png" 
-        alt="Hard Mode First Logo" 
-        style={{ width: '150px', marginBottom: '20px' }}
-      />
-      <h1 style={{ 
-        fontSize: '2.5rem',
-        marginBottom: '2rem',
-        color: '#2C5282'
-      }}>
-        Hard Mode First Haiku Generator
-      </h1>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <h1 style={{ 
+          fontSize: '2.5rem',
+          marginBottom: '2rem',
+          color: '#2C5282'
+        }}>
+          Hard Mode First Haiku Generator
+        </h1>
+        <img 
+          src="/hard-mode-first.png" 
+          alt="Hard Mode First Logo" 
+          style={{ width: '200px', height: 'auto', marginLeft: '20px' }}
+        />
+      </div>
 
       <p>
         I know, I know, my blog posts are wayyyy too long for any human audience. 
