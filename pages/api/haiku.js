@@ -74,7 +74,7 @@ async function generateHaikuWithClaude(blogPost) {
 export default async function handler(req, res) {
   try {
     const { postId } = req.query;
-    const blogPost = await getLatestBlogPost();
+    let blogPost = await getLatestBlogPost();
     
     // If postId is provided, find that specific post
     if (postId) {
