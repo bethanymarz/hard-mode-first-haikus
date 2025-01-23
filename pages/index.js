@@ -39,7 +39,8 @@ export default function Home() {
       maxWidth: '800px',
       margin: '0 auto',
       fontFamily: 'Arial, sans-serif',
-      color: '#333'
+      color: '#333',
+      backgroundColor: '#F0F4F8'
     }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <h1 style={{ 
@@ -56,7 +57,7 @@ export default function Home() {
         />
       </div>
 
-      <p>
+      <p style={{ fontSize: '1.125rem', lineHeight: '1.75', color: '#555' }}>
         I know, I know, my blog posts are wayyyy too long for any human audience. 
         But now you can turn any one of my blog posts into an instant haiku.
       </p>
@@ -69,7 +70,8 @@ export default function Home() {
           display: 'inline-block',
           margin: '20px 0',
           color: '#2C5282',
-          textDecoration: 'underline'
+          textDecoration: 'underline',
+          fontWeight: 'bold'
         }}
       >
         Visit my blog
@@ -116,7 +118,7 @@ export default function Home() {
 
       {result && !result.error && (
         <div style={{
-          backgroundColor: '#EDF2F7',
+          backgroundColor: '#FFFFFF',
           padding: '2rem',
           borderRadius: '0.5rem',
           boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)',
