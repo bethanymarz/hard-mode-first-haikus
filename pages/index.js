@@ -43,6 +43,7 @@ export default function Home() {
       color: '#333',
       backgroundImage: 'url(/hmf-haiku.png)',
       backgroundSize: 'cover',
+      backgroundAttachment: 'fixed',
       border: '10px solid #FFD700',
       borderRadius: '15px',
       boxShadow: '0 0 20px #FF69B4',
