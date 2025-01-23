@@ -73,7 +73,18 @@ async function generateHaikuWithClaude(blogPost) {
 // Make the handler async and actually use the functions
 export default async function handler(req, res) {
   try {
+    const { postId } = req.query;
     const blogPost = await getLatestBlogPost();
+    
+    // If postId is provided, find that specific post
+    if (postId) {
+      const feed = await parser.parseURL('https://api.paragraph.xyz/blogs/rss/@bethanycrystal');
+      const selectedPost = feed.items.find(item => item.guid === postId || item.link === postId);
+      if (selectedPost) {
+        blogPost = selectedPost;
+      }
+    }
+    
     const haikuResponse = await generateHaikuWithClaude(blogPost);
     
     res.status(200).json({
