@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div style={{ 
       padding: '40px',
-      maxWidth: '800px',
+      maxWidth: '600px',
       margin: '0 auto',
       marginTop: '50px',
       fontFamily: '"Comic Sans MS", cursive, sans-serif',
@@ -54,8 +54,7 @@ export default function Home() {
         padding: '20px', 
         borderRadius: '10px',
         marginBottom: '20px',
-        marginTop: '150px',
-        marginLeft: '15px'
+        marginTop: '150px'
       }}>
         <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#FF4500' }}>
           I know, I know, my blog posts are wayyyy too long for any human audience. 
@@ -83,8 +82,7 @@ export default function Home() {
         backgroundColor: 'rgba(255, 255, 255, 0.8)', 
         padding: '20px', 
         borderRadius: '10px',
-        marginBottom: '20px',
-        marginLeft: '15px'
+        marginBottom: '20px'
       }}>
         <h2 style={{ marginBottom: '1rem', color: '#FF4500', fontSize: '2rem' }}>Select a Blog Post</h2>
         <select 
@@ -133,8 +131,7 @@ export default function Home() {
           padding: '20px',
           borderRadius: '10px',
           boxShadow: '0 0 10px #FF69B4',
-          marginTop: '20px',
-          marginLeft: '15px'
+          marginTop: '20px'
         }}>
           <h3 style={{ 
             marginBottom: '1rem',
