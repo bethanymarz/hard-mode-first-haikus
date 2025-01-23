@@ -46,22 +46,6 @@ export default function Home() {
       borderRadius: '15px',
       boxShadow: '0 0 20px #FF69B4'
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <h1 style={{ 
-          fontSize: '3rem',
-          marginBottom: '2rem',
-          color: '#FF4500',
-          textShadow: '2px 2px #FFD700'
-        }}>
-          Hard Mode First Haiku Generator
-        </h1>
-        <img 
-          src="/hard-mode-first.png" 
-          alt="Hard Mode First Logo" 
-          style={{ width: '500px', height: 'auto', marginLeft: '20px' }}
-        />
-      </div>
-
       <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#FF4500' }}>
         I know, I know, my blog posts are wayyyy too long for any human audience. 
         But now you can turn any one of my blog posts into an instant haiku.
