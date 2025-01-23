@@ -38,7 +38,7 @@ export default function Home() {
       padding: '40px',
       maxWidth: '800px',
       margin: '0 auto',
-      marginTop: '100px',
+      marginTop: '500px',
       fontFamily: '"Comic Sans MS", cursive, sans-serif',
       color: '#333',
       backgroundImage: 'url(/hmf-haiku.png)',
