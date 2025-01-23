@@ -53,7 +53,7 @@ export default function Home() {
         <img 
           src="/hard-mode-first.png" 
           alt="Hard Mode First Logo" 
-          style={{ width: '300px', height: 'auto', marginLeft: '20px' }}
+          style={{ width: '500px', height: 'auto', marginLeft: '20px' }}
         />
       </div>
 
