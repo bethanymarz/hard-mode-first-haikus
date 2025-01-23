@@ -38,15 +38,19 @@ export default function Home() {
       padding: '40px',
       maxWidth: '800px',
       margin: '0 auto',
-      fontFamily: 'Arial, sans-serif',
+      fontFamily: '"Comic Sans MS", cursive, sans-serif',
       color: '#333',
-      backgroundColor: '#F0F4F8'
+      backgroundColor: '#FFB6C1',
+      border: '10px solid #FFD700',
+      borderRadius: '15px',
+      boxShadow: '0 0 20px #FF69B4'
     }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <h1 style={{ 
-          fontSize: '2.5rem',
+          fontSize: '3rem',
           marginBottom: '2rem',
-          color: '#2C5282'
+          color: '#FF4500',
+          textShadow: '2px 2px #FFD700'
         }}>
           Hard Mode First Haiku Generator
         </h1>
@@ -57,7 +61,7 @@ export default function Home() {
         />
       </div>
 
-      <p style={{ fontSize: '1.125rem', lineHeight: '1.75', color: '#555' }}>
+      <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#FF4500' }}>
         I know, I know, my blog posts are wayyyy too long for any human audience. 
         But now you can turn any one of my blog posts into an instant haiku.
       </p>
@@ -69,16 +73,17 @@ export default function Home() {
         style={{ 
           display: 'inline-block',
           margin: '20px 0',
-          color: '#2C5282',
+          color: '#FF4500',
           textDecoration: 'underline',
-          fontWeight: 'bold'
+          fontWeight: 'bold',
+          fontSize: '1.5rem'
         }}
       >
         Visit my blog
       </a>
 
       <div style={{ marginBottom: '2rem' }}>
-        <h2 style={{ marginBottom: '1rem', color: '#2C5282' }}>Select a Blog Post</h2>
+        <h2 style={{ marginBottom: '1rem', color: '#FF4500', fontSize: '2rem' }}>Select a Blog Post</h2>
         <select 
           onChange={(e) => setSelectedPost(e.target.value)}
           style={{
@@ -86,8 +91,10 @@ export default function Home() {
             padding: '0.5rem',
             marginBottom: '1rem',
             borderRadius: '0.375rem',
-            border: '1px solid #CBD5E0',
-            fontSize: '1rem'
+            border: '2px solid #FFD700',
+            fontSize: '1.25rem',
+            backgroundColor: '#FFFACD',
+            color: '#FF4500'
           }}
         >
           <option value="">Latest Post</option>
@@ -102,14 +109,15 @@ export default function Home() {
           onClick={() => generateHaiku(selectedPost)}
           disabled={loading}
           style={{
-            backgroundColor: '#2C5282',
+            backgroundColor: '#FF4500',
             color: 'white',
             padding: '0.75rem 1.5rem',
             borderRadius: '0.375rem',
             border: 'none',
             cursor: loading ? 'wait' : 'pointer',
             opacity: loading ? 0.7 : 1,
-            fontSize: '1rem'
+            fontSize: '1.25rem',
+            boxShadow: '0 0 10px #FFD700'
           }}
         >
           {loading ? 'Generating...' : 'Generate Haiku'}
@@ -118,24 +126,24 @@ export default function Home() {
 
       {result && !result.error && (
         <div style={{
-          backgroundColor: '#FFFFFF',
+          backgroundColor: '#FFFACD',
           padding: '2rem',
           borderRadius: '0.5rem',
-          boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)',
+          boxShadow: '0 0 10px #FF69B4',
           marginTop: '2rem'
         }}>
           <h3 style={{ 
             marginBottom: '1rem',
-            color: '#2C5282',
-            fontSize: '1.25rem'
+            color: '#FF4500',
+            fontSize: '1.5rem'
           }}>
             {result.title}
           </h3>
           <div style={{
-            fontFamily: 'Georgia, serif',
-            fontSize: '1.125rem',
+            fontFamily: '"Comic Sans MS", cursive, sans-serif',
+            fontSize: '1.25rem',
             lineHeight: '1.75',
-            color: '#2D3748'
+            color: '#FF4500'
           }}>
             {result.haiku.map((line, index) => (
               <p key={index} style={{ margin: '0.5rem 0' }}>{line}</p>
@@ -148,9 +156,10 @@ export default function Home() {
             style={{ 
               display: 'inline-block',
               marginTop: '20px',
-              color: '#2C5282',
+              color: '#FF4500',
               textDecoration: 'underline',
-              fontWeight: 'bold'
+              fontWeight: 'bold',
+              fontSize: '1.5rem'
             }}
           >
             Read the full blog post
