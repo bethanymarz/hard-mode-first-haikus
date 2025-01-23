@@ -38,7 +38,7 @@ export default function Home() {
       padding: '40px',
       maxWidth: '800px',
       margin: '0 auto',
-      marginTop: '500px',
+      marginTop: '50px',
       fontFamily: '"Comic Sans MS", cursive, sans-serif',
       color: '#333',
       backgroundImage: 'url(/hmf-haiku.png)',
@@ -52,7 +52,8 @@ export default function Home() {
         backgroundColor: 'rgba(255, 255, 255, 0.8)', 
         padding: '20px', 
         borderRadius: '10px',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        marginTop: '100px'
       }}>
         <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#FF4500' }}>
           I know, I know, my blog posts are wayyyy too long for any human audience. 
