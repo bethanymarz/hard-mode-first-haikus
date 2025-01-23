@@ -40,7 +40,8 @@ export default function Home() {
       margin: '0 auto',
       fontFamily: '"Comic Sans MS", cursive, sans-serif',
       color: '#333',
-      backgroundColor: '#FFB6C1',
+      backgroundImage: 'url(/hmf-haiku.png)',
+      backgroundSize: 'cover',
       border: '10px solid #FFD700',
       borderRadius: '15px',
       boxShadow: '0 0 20px #FF69B4'
