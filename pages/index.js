@@ -57,8 +57,7 @@ export default function Home() {
           backgroundColor: 'rgba(255, 255, 255, 0.8)', 
           padding: '20px', 
           borderRadius: '10px',
-          marginBottom: '20px',
-          marginTop: '150px'
+          marginBottom: '20px'
         }}>
           <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#800080' }}>
             Tired of reading 1000 word blog posts? Have a haiku instead. &hearts;
