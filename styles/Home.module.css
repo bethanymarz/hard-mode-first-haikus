@@ -1,0 +1,37 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive, sans-serif;
+  color: #333;
+  background-image: url(/hmf-haiku.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  border: 5px solid #FFD700;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #FF69B4;
+  text-align: center;
+}
+
+.textBox {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+}
+
+@media (max-width: 768px) {
+  .textBox {
+    margin-top: 150px;
+    max-width: 85%;
+  }
+} 

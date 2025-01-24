@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const [result, setResult] = useState(null);
@@ -34,36 +35,9 @@ export default function Home() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
-      <div style={{ 
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh',
-        padding: '20px',
-        maxWidth: '100%',
-        margin: '0 auto',
-        marginTop: '20px',
-        fontFamily: '"Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive, sans-serif',
-        color: '#333',
-        backgroundImage: 'url(/hmf-haiku.png)',
-        backgroundSize: 'contain',
-        backgroundPosition: 'top',
-        backgroundRepeat: 'no-repeat',
-        border: '5px solid #FFD700',
-        borderRadius: '10px',
-        boxShadow: '0 0 10px #FF69B4',
-        textAlign: 'center'
-      }}>
-        <div style={{ 
-          backgroundColor: 'rgba(255, 255, 255, 0.8)', 
-          padding: '20px', 
-          borderRadius: '10px',
-          marginBottom: '20px',
-          marginTop: window.innerWidth <= 768 ? '150px' : '300px',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: window.innerWidth <= 768 ? '85%' : '60%'
-        }}>
+    <div style={{ padding: '40px' }}>
+      <div className={styles.mainContainer}>
+        <div className={styles.textBox}>
           <p style={{ 
             fontSize: '1.5rem', 
             lineHeight: '1.75', 
