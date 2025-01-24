@@ -38,7 +38,7 @@ export default function Home() {
       display: 'flex',
       flexDirection: 'column',
       minHeight: '100vh',
-      padding: '20px',
+      padding: '40px',
       maxWidth: '100%',
       margin: '0 auto',
       marginTop: '20px',
