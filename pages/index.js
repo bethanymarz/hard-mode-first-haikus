@@ -61,7 +61,7 @@ export default function Home() {
           marginTop: '150px'
         }}>
           <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#800080' }}>
-            Tired of reading 1000 word blog posts? Have a haiku instead. {'<3'}
+            Tired of reading 1000 word blog posts? Have a haiku instead. {'♥'}
           </p>
 
           <a 
@@ -188,7 +188,7 @@ export default function Home() {
         fontSize: '1rem', 
         color: '#000000' 
       }}>
-        Made with {"<3"} by Bethany Crystal, with the help of Cursor, Vercel, Claude, Flux, and Paragraph.xyz.
+        Made with {"♥"} by Bethany Crystal, with the help of Cursor, Vercel, Claude, Flux, and Paragraph.xyz.
       </footer>
     </div>
   );
