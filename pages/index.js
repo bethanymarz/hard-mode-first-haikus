@@ -59,7 +59,7 @@ export default function Home() {
           padding: '20px', 
           borderRadius: '10px',
           marginBottom: '20px',
-          marginTop: '200px'
+          marginTop: '300px'
         }}>
           <p style={{ 
             fontSize: '1.5rem', 
