@@ -38,18 +38,19 @@ export default function Home() {
       display: 'flex',
       flexDirection: 'column',
       minHeight: '100vh',
-      padding: '40px',
-      maxWidth: '600px',
+      padding: '20px',
+      maxWidth: '100%',
       margin: '0 auto',
-      marginTop: '50px',
+      marginTop: '20px',
       fontFamily: '"Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive, sans-serif',
       color: '#333',
       backgroundImage: 'url(/hmf-haiku.png)',
-      backgroundSize: 'contain',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center top',
       backgroundRepeat: 'no-repeat',
-      border: '10px solid #FFD700',
-      borderRadius: '15px',
-      boxShadow: '0 0 20px #FF69B4',
+      border: '5px solid #FFD700',
+      borderRadius: '10px',
+      boxShadow: '0 0 10px #FF69B4',
       textAlign: 'center'
     }}>
       <div style={{ flex: '1' }}>
@@ -96,12 +97,12 @@ export default function Home() {
           <select 
             onChange={(e) => setSelectedPost(e.target.value)}
             style={{
-              width: '100%',
+              width: '90%',
               padding: '0.5rem',
               marginBottom: '1rem',
               borderRadius: '0.375rem',
               border: '2px solid #FFD700',
-              fontSize: '1.25rem',
+              fontSize: '1rem',
               backgroundColor: '#FFFACD',
               color: '#000000'
             }}
@@ -120,13 +121,13 @@ export default function Home() {
             style={{
               backgroundColor: '#FF4500',
               color: 'white',
-              padding: '0.75rem 1.5rem',
+              padding: '0.75rem 1rem',
               borderRadius: '0.375rem',
               border: 'none',
               cursor: loading ? 'wait' : 'pointer',
               opacity: loading ? 0.7 : 1,
-              fontSize: '1.25rem',
-              boxShadow: '0 0 10px #FFD700'
+              fontSize: '1rem',
+              boxShadow: '0 0 5px #FFD700'
             }}
           >
             {loading ? 'Generating...' : 'Generate Haiku'}
