@@ -60,7 +60,7 @@ export default function Home() {
           marginBottom: '20px',
           marginTop: '150px'
         }}>
-          <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#FF4500' }}>
+          <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#800080' }}>
             Tired of reading 1000 word blog posts? Have a haiku instead. {"<3"}
           </p>
 
@@ -87,7 +87,7 @@ export default function Home() {
           borderRadius: '10px',
           marginBottom: '20px'
         }}>
-          <h2 style={{ marginBottom: '1rem', color: '#FF4500', fontSize: '2rem' }}>Select a Blog Post</h2>
+          <h2 style={{ marginBottom: '1rem', color: '#000000', fontSize: '2rem' }}>Select a Blog Post</h2>
           <select 
             onChange={(e) => setSelectedPost(e.target.value)}
             style={{
@@ -187,7 +187,7 @@ export default function Home() {
       <footer style={{ 
         marginTop: '40px', 
         fontSize: '1rem', 
-        color: '#FF4500' 
+        color: '#000000' 
       }}>
         Made with {"<3"} by Bethany Crystal, with the help of Cursor, Vercel, Claude, Flux, and Paragraph.xyz.
       </footer>
