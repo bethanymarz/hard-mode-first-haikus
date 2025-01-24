@@ -61,7 +61,7 @@ export default function Home() {
           marginTop: '150px'
         }}>
           <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#800080' }}>
-            Tired of reading 1000 word blog posts? Have a haiku instead. <3
+            Tired of reading 1000 word blog posts? Have a haiku instead. 
           </p>
 
           <a 
