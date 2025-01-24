@@ -42,7 +42,7 @@ export default function Home() {
       maxWidth: '600px',
       margin: '0 auto',
       marginTop: '50px',
-      fontFamily: '"Comic Sans MS", cursive, sans-serif',
+      fontFamily: '"Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive, sans-serif',
       color: '#333',
       backgroundImage: 'url(/hmf-haiku.png)',
       backgroundSize: 'contain',
