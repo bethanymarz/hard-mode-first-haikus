@@ -150,7 +150,7 @@ export default function Home() {
               {result.title}
             </h3>
             <div style={{
-              fontFamily: '"Comic Sans MS", cursive, sans-serif',
+              fontFamily: '"Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive, sans-serif',
               fontSize: '1.25rem',
               lineHeight: '1.75',
               color: '#000000'
