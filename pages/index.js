@@ -59,7 +59,12 @@ export default function Home() {
           borderRadius: '10px',
           marginBottom: '20px'
         }}>
-          <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#800080' }}>
+          <p style={{ 
+            fontSize: '1.5rem', 
+            lineHeight: '1.75', 
+            color: '#800080',
+            marginTop: '50px'
+          }}>
             Tired of reading 1000 word blog posts? Have a haiku instead. &hearts;
           </p>
 
@@ -84,7 +89,7 @@ export default function Home() {
           padding: '20px', 
           borderRadius: '10px',
           marginBottom: '20px',
-          marginTop: '200px'
+          marginTop: '150px'
         }}>
           <h2 style={{ marginBottom: '1rem', color: '#000000', fontSize: '2rem' }}>Select a Blog Post</h2>
           <select 
