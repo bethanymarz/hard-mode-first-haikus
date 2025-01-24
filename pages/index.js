@@ -57,15 +57,16 @@ export default function Home() {
           backgroundColor: 'rgba(255, 255, 255, 0.8)', 
           padding: '20px', 
           borderRadius: '10px',
-          marginBottom: '20px'
+          marginBottom: '20px',
+          marginTop: '200px'
         }}>
           <p style={{ 
             fontSize: '1.5rem', 
             lineHeight: '1.75', 
-            color: '#800080',
-            marginTop: '50px'
+            color: '#800080'
           }}>
-            Tired of reading 1000 word blog posts? Have a haiku instead. &hearts;
+            Tired of reading 1000-word blog posts?<br/>
+            Have a haiku instead. &hearts;
           </p>
 
           <a 
@@ -102,7 +103,7 @@ export default function Home() {
               border: '2px solid #FFD700',
               fontSize: '1.25rem',
               backgroundColor: '#FFFACD',
-              color: '#FF4500'
+              color: '#000000'
             }}
           >
             <option value="">Latest Post</option>
@@ -151,7 +152,7 @@ export default function Home() {
               fontFamily: '"Comic Sans MS", cursive, sans-serif',
               fontSize: '1.25rem',
               lineHeight: '1.75',
-              color: '#FF4500'
+              color: '#000000'
             }}>
               {result.haiku.map((line, index) => (
                 <p key={index} style={{ margin: '0.5rem 0' }}>{line}</p>
