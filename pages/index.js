@@ -83,7 +83,8 @@ export default function Home() {
         <div style={{ 
           padding: '20px', 
           borderRadius: '10px',
-          marginBottom: '20px'
+          marginBottom: '20px',
+          marginTop: '200px'
         }}>
           <h2 style={{ marginBottom: '1rem', color: '#000000', fontSize: '2rem' }}>Select a Blog Post</h2>
           <select 
