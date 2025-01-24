@@ -61,8 +61,7 @@ export default function Home() {
           marginTop: '150px'
         }}>
           <p style={{ fontSize: '1.5rem', lineHeight: '1.75', color: '#FF4500' }}>
-            I know, I know, my blog posts are wayyyy too long for any human audience. 
-            But now you can turn any one of my blog posts into an instant haiku.
+            Tired of reading 1000 word blog posts? Have a haiku instead. <3
           </p>
 
           <a 
